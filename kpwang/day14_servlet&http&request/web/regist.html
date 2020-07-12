@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        window.onload=function () {
+            var img=document.getElementById("checkCode");
+            img.onclick=function () {
+                img.src="/day14/checkCode?"+new Date().getTime();
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <!--<form action="/day14/requestDemo7" method="post">
+        <input type="text" name="username" value="请输入用户名">
+        <input type="text" name="password" value="请输入密码">
+        <input type="submit" value="注册">
+    </form>-->
+    <img id="checkCode" src="/day14/checkCode">
+    <a id="change" href="/day14/checkCode">看不清换一张</a>
+</body>
+</html>
